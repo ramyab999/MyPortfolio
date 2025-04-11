@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: beige;
+}
+
+.container-fluid {
+    background-image: url('assets/image3.avif');
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head h2 {
+    font-size: 24px;
+}
+
+.home1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+
+.home1 ul li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.welcome {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.button {
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.about,
+.about h2,
+.about p,
+.features,
+.softskills,
+.Courses,
+.count,
+.project,
+.para,
+.last,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.me {
+    padding: 10px;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills img {
+    height: 40px;
+    width: 40px;
+}
+
+.softskills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.softskills div {
+    max-width: 300px;
+}
+
+.softskills img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.Courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.know1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.know1 div {
+    max-width: 300px;
+}
+
+.count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('assets/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.projectimg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icons,
+.message {
+    flex: 1 1 300px;
+}
+
+.icons img {
+    margin: 5px;
+}
+
+.message input,
+.message textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home,
+    .features,
+    .Courses,
+    .count,
+    .projectimg,
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome {
+        width: 100%;
+    }
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Image img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.image {
+    max-width: 600px;
+}
+
+.picture ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.picture ul li {
+    margin: 0;
+}
+
+.picture ul li a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.picture ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .picture ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .picture ul li a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
